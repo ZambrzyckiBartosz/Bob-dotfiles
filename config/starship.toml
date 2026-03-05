@@ -1,0 +1,37 @@
+format = """
+[](blue)\
+$directory\
+[](fg:blue bg:green)\
+$git_branch\
+[](fg:green)\
+$character"""
+
+right_format = """
+$status\
+[](blue)\
+$time\
+[](blue)"""
+
+[directory]
+format = "[  $path ](bg:blue fg:black)"
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+format = "[ $symbol$branch ](bg:green fg:black)"
+symbol = " "
+
+[time]
+disabled = false
+time_format = "%I:%M:%S %p"
+format = "[  $time ](bg:blue fg:black)"
+
+[status]
+disabled = false
+format = "[ $symbol ](fg:green)"
+success_symbol = "✔"
+symbol = "✖"
+
+[character]
+success_symbol = " [❯](green)"
+error_symbol = " [❯](red)"

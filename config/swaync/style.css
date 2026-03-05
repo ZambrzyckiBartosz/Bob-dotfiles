@@ -1,0 +1,108 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notification {
+  background: rgba(13, 13, 13, 0.7);
+  border-radius: 15px;
+  margin: 8px;
+  padding: 0;
+  border: 2px solid #2B71F3;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.close-button {
+  background: #2B71F3;
+  color: #121c06;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 4px;
+}
+
+.close-button:hover {
+  background: #3E85F2;
+}
+
+.notification-default-action {
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+}
+
+.summary {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2B71F3;
+  margin-bottom: 4px;
+}
+
+.body {
+  font-size: 12px;
+  color: #cadcf2;
+}
+
+.control-center {
+  background: rgba(13, 13, 13, 0.7);
+  border: 2px solid #2B71F3;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.widget-title {
+  background: transparent;
+  color: #2B71F3;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.widget-title > button {
+  background: #2B71F3;
+  color: #121c06;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.widget-title > button:hover {
+  background: #3E85F2;
+}
+
+.widget-dnd {
+  background: transparent;
+  color: #cadcf2;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.widget-dnd > switch {
+  background: #8d9aa9;
+  border-radius: 12px;
+}
+
+.widget-dnd > switch:checked {
+  background: #2B71F3;
+}
+
+.blank-window {
+  background: transparent;
+}

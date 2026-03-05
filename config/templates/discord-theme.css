@@ -1,0 +1,42 @@
+/**
+ * @name BobbyPywal
+ * @description Dynamiczny motyw dla BobbyOS
+ * @author Bob
+ */
+
+:root, .theme-dark, .theme-light {{
+    /* Akcenty (Przyciski, suwaki, linki) - reagują na tapetę */
+    --text-brand: {color5} !important;
+    --brand-experiment: {color5} !important;
+    --brand-experiment-hover: {color6} !important;
+    --brand-experiment-500: {color5} !important;
+    --button-filled-brand-background: {color5} !important;
+    --button-filled-brand-background-hover: {color6} !important;
+    --button-filled-brand-background-active: {color7} !important;
+    --control-brand-foreground: {color5} !important;
+    
+    --interactive-normal: {foreground} !important;
+    --interactive-hover: {color5} !important;
+    --interactive-active: {color6} !important;
+    --background-modifier-selected: rgba({color2.rgb}, 0.3) !important;
+    --background-modifier-hover: rgba({color2.rgb}, 0.15) !important;
+
+    /* Czyste szkło na środku czatu (100% przezroczyste) */
+    --bg-overlay-app-frame: transparent !important;
+    --bg-overlay-chat: transparent !important;
+    --bg-base-primary: transparent !important;
+    --background-primary: transparent !important;
+    
+    /* TŁA PANELI BOCZNYCH - Zabarwione głównym kolorem tapety (color1) z lekką przezroczystością! */
+    --bg-base-secondary: rgba({color1.rgb}, 0.10) !important;
+    --bg-base-tertiary: rgba({color1.rgb}, 0.20) !important;
+    --background-secondary: rgba({color1.rgb}, 0.10) !important;
+    --background-secondary-alt: rgba({color1.rgb}, 0.15) !important;
+    --background-tertiary: rgba({color1.rgb}, 0.20) !important;
+    --background-floating: rgba({color1.rgb}, 0.4) !important;
+}}
+
+/* Zrzucenie ukrytych warstw Discorda */
+body, #app-mount, .app_a01fb1, .bg__12180, div[class^="bg_"], .layer__26775, .base__3e6af, .app__00c92, .pageWrapper_f1d063 {{
+    background: transparent !important;
+}}

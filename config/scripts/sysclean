@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo -e "\033[1;34m[*] Start...\033[0m"
+
+echo -e "\n\033[0;32m[+] Cleaning cache...\033[0m"
+sudo paccache -r
+
+echo -e "\n\033[0;32m[+] Seeking orphans...\033[0m"
+ORPHANS=$(pacman -Qtdq)
+if [ -n "$ORPHANS" ]; then
+    sudo pacman -Rns $ORPHANS
+    echo -e "\033[1;32m[!] Orphans found.\033[0m"
+else
+    echo -e "\033[1;33m[!] Done.\033[0m"
+fi
+
+echo -e "\n\033[0;32m[+] Cleaning AUR...\033[0m"
+yay -Sc --aur --noconfirm
+
+echo -e "\n\033[1;32m[*] Done.\033[0m"
+read -p "Press enter..."
