@@ -1,4 +1,4 @@
-#bob config
+##bob config
 | Component | Tool |
 |-----------|------|
 | **WM** | Hyprland |
@@ -19,4 +19,5 @@
 ![](./screenshots/5.png)
 ![](./screenshots/6.png)
 
+<video src="./screenshots/moj_film.mp4" controls="controls" width="100%"> </video>
 > Credits: ViegPhunt, binnewbs, Mon4sm, Harman1307, r/unixporn
