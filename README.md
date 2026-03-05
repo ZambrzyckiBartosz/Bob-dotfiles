@@ -1,4 +1,3 @@
-##bob config
 | Component | Tool |
 |-----------|------|
 | **WM** | Hyprland |
